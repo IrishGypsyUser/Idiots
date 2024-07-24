@@ -23,15 +23,15 @@ getgenv().Dragging = {Gui = nil, True = false}
 getgenv().Draggables = {}
 getgenv().ToolTip = {Enabled = false, Content = "", Item = nil}
 
-local HotkeyRemoveKey = Enum.KeyCode.RightControl
-local Selected = {
+getgenv().HotkeyRemoveKey = Enum.KeyCode.RightControl
+getgenv().Selected = {
     Frame = nil,
     Item = nil,
     Offset = UDim2.new(),
     Follow = false
 }
-local SelectedTab
-local SelectedTabLines = {}
+getgenv().SelectedTab = nil
+getgenv().SelectedTabLines = {}
 
 
 local wait = task.wait
