@@ -1,4 +1,4 @@
-local Settings = {
+getgenv().Settings = {
     Accent = Color3.fromHex("#00A3E0"),
     Font = Enum.Font.SourceSans,
     IsBackgroundTransparent = true,
@@ -12,16 +12,16 @@ local Settings = {
 }
 
 
-local Menu = {}
-local Tabs = {}
-local Items = {}
-local EventObjects = {} -- For updating items on menu property change
-local Notifications = {}
+getgenv().Menu = {}
+getgenv().Tabs = {}
+getgenv().Items = {}
+getgenv().EventObjects = {} -- For updating items on menu property change
+getgenv().Notifications = {}
 
-local Scaling = {True = false, Origin = nil, Size = nil}
-local Dragging = {Gui = nil, True = false}
-local Draggables = {}
-local ToolTip = {Enabled = false, Content = "", Item = nil}
+getgenv().Scaling = {True = false, Origin = nil, Size = nil}
+getgenv().Dragging = {Gui = nil, True = false}
+getgenv().Draggables = {}
+getgenv().ToolTip = {Enabled = false, Content = "", Item = nil}
 
 local HotkeyRemoveKey = Enum.KeyCode.RightControl
 local Selected = {
